@@ -2,10 +2,10 @@ import { ChatEngine } from 'react-chat-engine';
 
 import ChatFeed from './components/ChatFeed';
 import LoginForm from './components/LoginForm';
-import {projectID} from '../cred';
+import projectID from './cred.js';
+
 import './App.css';
 
-//const projectID = 'f9386a29-08f1-40fd-87aa-7c0ffade6b39';
 const App = () => {
   if (!localStorage.getItem('username')) return <LoginForm />;
 
@@ -16,7 +16,6 @@ const App = () => {
       userName={localStorage.getItem('username')}
       userSecret={localStorage.getItem('password')}
       renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
-      onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
     />
   );
 };

@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import mlhLogo from '../images/mlh-logo-color.png';
-import projectID from '../cred';
-
-//const projectID = 'f9386a29-08f1-40fd-87aa-7c0ffade6b39';
+import projectID from '../cred.js';
 
 const Modal = () => {
   const [username, setUsername] = useState('');

@@ -15,9 +15,12 @@
 }
 
 .ce-active-chat-card {
-  background-color: #cabcdc !important;
-  border: 4px solid #cabcdc !important;
+  background-color: #b9daf5 !important;
+  border: 4px solid #b9daf5 !important;
   border-radius: 0px !important;
+}
+
+.ce-chat-title-text {
 }
 
 .ce-chat-subtitle-text {
@@ -35,7 +38,7 @@
 
 .ce-primary-button {
   border-radius: 6px !important;
-  background-color: #7554a0 !important;
+  background-color: #2d71a8 !important;
   position: relative;
   bottom: 1px;
 }
@@ -84,13 +87,13 @@
 }
 
 .chat-title {
-  color: #7554a0;
+  color: #56a5ff;
   font-weight: 800;
   font-size: 24px;
 }
 
 .chat-subtitle {
-  color: #7554a0;
+  color: #5488a0;
   font-weight: 600;
   font-size: 12px;
   padding-top: 4px;
@@ -106,8 +109,7 @@
 .message-block {
   width: 100%;
   display: inline-block;
-}
-
+} 
 .message-avatar {
   width: 44px;
   height: 44px;
@@ -119,12 +121,14 @@
   background-size: 48px;
 }
 
+
 .message {
   padding: 12px;
   font-size: 16px;
   border-radius: 6px;
   max-width: 60%;
 }
+
 
 .message-image {
   margin-right: 18px;
@@ -180,7 +184,7 @@
 
 .image-button {
   cursor: pointer;
-  padding: 0px 12px;
+  padding: 0px 30px;
   height: 100%;
 }
 
@@ -188,7 +192,9 @@
   height: 42px;
   background-color: white;
   border: 1px solid white;
+  transform: rotate(90deg);
   padding: 0px 18px;
+  float: right;
   cursor: pointer;
 }
 
@@ -217,7 +223,6 @@
 .wrapper {
   height: 100vh;
 	width: 100%;
-  background: rgb(117,84,160);
   background: lightblue; 
   display: flex;
   justify-content: center;
@@ -252,13 +257,22 @@
   font-size: 2.3em;;
 }
 
-.logo {
+.login-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   height: auto;
   width: 80%;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  height: auto;
+  width: 30%;
 }
 
 

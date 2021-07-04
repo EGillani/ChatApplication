@@ -1,6 +1,7 @@
 import MyMessage from './MyMessage';
 import TheirMessage from './TheirMessage';
 import MessageForm from './MessageForm';
+import mlhLogo from '../images/mlh-logo-color.png';
 
 const ChatFeed = (props) => {
   const { chats, activeChat, userName, messages } = props;
@@ -46,6 +47,7 @@ const ChatFeed = (props) => {
   return (
     <div className="chat-feed">
       <div className="chat-title-container">
+        <img className="logo" src={mlhLogo} />
         <div className="chat-title">{chat?.title}</div>
         <div className="chat-subtitle">
           {chat.people.map((person) => ` ${person.person.username}`)}
