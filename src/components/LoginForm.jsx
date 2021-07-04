@@ -29,7 +29,7 @@ const Modal = () => {
   return (
     <div className="wrapper">
       <div className="form">
-        <img className="logo" src={mlhLogo} />
+        <img className="login-logo" src={mlhLogo} />
         <h2 className="title">Chat Application</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required />
